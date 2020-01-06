@@ -2,7 +2,7 @@ const app = require('express')();
 
 const client = require('./redisClient');
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
 	res.send('hello world hello world');
 });
 app.get('/test-redis', (req, res) => {
