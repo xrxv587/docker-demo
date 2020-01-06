@@ -6,7 +6,7 @@ COPY . /src
 
 RUN npm install
 
-EXPOSE 81
+EXPOSE 3999
 
 ENV NAME HELLOWORLD
 
