@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	哟哟
+	<button id="btn">测试按钮</button>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+let server = axios.create();
+document.getElementById('btn').onclick = function() {
+	axios.get('/test-get').then(res => {
+		console.log(res.data);
+	});
+};
+</script>
+</html>
